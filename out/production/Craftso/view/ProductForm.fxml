@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductFormController">
+   <children>
+      <Label layoutX="76.0" layoutY="77.0" text="Product ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="185.0" layoutY="62.0" prefHeight="33.0" prefWidth="143.0" />
+      <Label layoutX="76.0" layoutY="126.0" text="Product Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="185.0" layoutY="111.0" prefHeight="33.0" prefWidth="143.0" />
+      <Label layoutX="76.0" layoutY="174.0" text="Description">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="185.0" layoutY="159.0" prefHeight="33.0" prefWidth="245.0" />
+      <Label layoutX="76.0" layoutY="218.0" text="Unit Price">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="185.0" layoutY="203.0" prefHeight="33.0" prefWidth="143.0" />
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="800.0" layoutY="30.0" prefHeight="69.0" prefWidth="169.0" style="-fx-border-color: #2ed574; -fx-border-radius: 20; -fx-border-width: 3; -fx-background-radius: 20;" text="Add Product" textFill="#32ab40">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="801.0" layoutY="112.0" prefHeight="69.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-border-color: #f81d1d; -fx-border-radius: 20; -fx-border-width: 3;" text="Remove Product" textFill="#f81d1d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="801.0" layoutY="197.0" prefHeight="69.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-border-color: #c2b608; -fx-border-radius: 20; -fx-border-width: 3;" text="update Product" textFill="#c2b608">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox layoutX="362.0" layoutY="65.0" prefHeight="33.0" prefWidth="100.0" />
+      <Label layoutX="597.0" layoutY="64.0" text="Qty On Hand">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="568.0" layoutY="96.0" prefHeight="47.0" prefWidth="143.0" />
+      <Label layoutX="597.0" layoutY="159.0" text="Orders Made">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="568.0" layoutY="191.0" prefHeight="47.0" prefWidth="143.0" />
+      <TableView layoutX="21.0" layoutY="366.0" prefHeight="176.0" prefWidth="957.0">
+        <columns>
+          <TableColumn prefWidth="107.0" text="Product ID" />
+          <TableColumn prefWidth="168.0" text="Product Name" />
+            <TableColumn prefWidth="150.0" text="Description" />
+            <TableColumn prefWidth="164.0" text="Unit Price" />
+            <TableColumn prefWidth="189.0" text="QTY On Hand" />
+            <TableColumn prefWidth="151.0" text="Orders Made" />
+        </columns>
+      </TableView>
+      <JFXButton alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="649.0" layoutY="284.0" prefHeight="69.0" prefWidth="137.0" style="-fx-background-radius: 20; -fx-border-color: #0db3cc; -fx-border-radius: 20; -fx-border-width: 3;" text="Full Report" textFill="#0db3cc">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="475.0" layoutY="284.0" prefHeight="69.0" prefWidth="157.0" style="-fx-background-radius: 20; -fx-border-color: #2cae27; -fx-border-radius: 20; -fx-border-width: 3;" text="Product Report" textFill="#2cae27">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="801.0" layoutY="282.0" prefHeight="69.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-border-color: #0db3cc; -fx-border-radius: 20; -fx-border-width: 3;" text="View Products" textFill="#0db3cc">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="808.0" layoutY="124.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-delete-bin-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="811.0" layoutY="44.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-add-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="810.0" layoutY="214.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-update-48%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="811.0" layoutY="298.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-view-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="660.0" layoutY="297.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-attendance-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="482.0" layoutY="299.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-apply-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

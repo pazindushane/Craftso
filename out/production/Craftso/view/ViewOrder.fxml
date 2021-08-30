@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="580.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewOrderController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="877.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtOID" alignment="CENTER" labelFloat="true" layoutX="57.0" layoutY="150.0" onAction="#txtOIDOnAction" prefHeight="37.0" prefWidth="205.0" promptText="Order ID">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustContact" alignment="CENTER" labelFloat="true" layoutX="328.0" layoutY="152.0" prefHeight="37.0" prefWidth="205.0" promptText="Custmer Contact">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="610.0" layoutY="37.0" prefHeight="37.0" prefWidth="241.0" text="Date" textFill="#f2efef">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="324.0" layoutY="32.0" text="Search Orders" textFill="#f8f8f8">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblSearch" layoutX="43.0" layoutY="239.0" prefHeight="297.0" prefWidth="784.0">
+        <columns>
+          <TableColumn prefWidth="125.99998474121094" text="Category" />
+          <TableColumn prefWidth="181.0" text="Product Name" />
+            <TableColumn prefWidth="242.0" text="Material" />
+            <TableColumn prefWidth="242.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtPayment" alignment="CENTER" labelFloat="true" layoutX="614.0" layoutY="154.0" prefHeight="37.0" prefWidth="205.0" promptText="Payment">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

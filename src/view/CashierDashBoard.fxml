@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root1" prefHeight="626.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierDashBoardController">
+   <children>
+      <AnchorPane prefHeight="674.0" prefWidth="216.0">
+         <children>
+            <ImageView fitHeight="94.0" fitWidth="215.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="215.0" layoutY="93.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="215.0" layoutX="-1.0" layoutY="187.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="215.0" layoutX="-1.0" layoutY="281.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="215.0" layoutX="-1.0" layoutY="375.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="215.0" layoutX="-1.0" layoutY="469.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="111.0" fitWidth="215.0" layoutX="-1.0" layoutY="563.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="215.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/design-your-unique-one-of-a-kind-special-logo-removebg-preview.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.1" hue="-0.26" />
+               </effect>
+            </ImageView>
+            <JFXButton fx:id="btnAddPrdct" alignment="CENTER_RIGHT" layoutX="1.0" layoutY="296.0" onMouseClicked="#btnAddPrdctOnAction" prefHeight="72.0" prefWidth="215.0" style="-fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 3; -fx-background-color: white;" text="Manage Products" textFill="#cc852d">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#cc852d" />
+                        <Stop color="WHITE" offset="0.4948453608247423" />
+                        <Stop color="#cc852d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets right="7.0" />
+               </opaqueInsets></JFXButton>
+            <JFXButton fx:id="btnHome" alignment="CENTER" buttonType="RAISED" layoutY="201.0" onMouseClicked="#btnHomeOnAction" prefHeight="72.0" prefWidth="215.0" style="-fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 3; -fx-background-color: white;" text="Home" textFill="#cc852d">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#cc852d" />
+                        <Stop color="WHITE" offset="0.4948453608247423" />
+                        <Stop color="#cc852d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets right="7.0" />
+               </opaqueInsets></JFXButton>
+            <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="18.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-home-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-product-48.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnManageOrd" alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="389.0" onAction="#btnManageOrdOnAction" prefHeight="72.0" prefWidth="215.0" style="-fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 3; -fx-background-color: white;" text="Manage Orders" textFill="#cc852d">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#cc852d" />
+                        <Stop color="WHITE" offset="0.4948453608247423" />
+                        <Stop color="#cc852d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets right="7.0" />
+               </opaqueInsets>
+            </JFXButton>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="16.0" layoutY="404.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-fast-cart-48.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnReport" alignment="CENTER" layoutY="490.0" onAction="#btnReportOnAction" prefHeight="72.0" prefWidth="215.0" style="-fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 3; -fx-background-color: white;" text="Reports" textFill="#cc852d">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#cc852d" />
+                        <Stop color="WHITE" offset="0.4948453608247423" />
+                        <Stop color="#cc852d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets right="7.0" />
+               </opaqueInsets>
+            </JFXButton>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="22.0" layoutY="506.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-attendance-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="215.0" prefHeight="94.0" prefWidth="877.0">
+         <children>
+            <ImageView fitHeight="94.0" fitWidth="877.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogout" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="720.0" layoutY="21.0" onAction="#btnLogoutOnAction" prefHeight="62.0" prefWidth="119.0" style="-fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 3;" text="Log Out" textFill="#fffafa">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#f80303" />
+                        <Stop color="#fffcfc" offset="0.5017182130584192" />
+                        <Stop color="#f80303" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="735.0" layoutY="38.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-export-48.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.88" />
+               </effect>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="root" layoutX="215.0" layoutY="94.0" prefHeight="580.0" prefWidth="877.0" />
+   </children>
+</AnchorPane>

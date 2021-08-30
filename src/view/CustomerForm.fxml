@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplyFormController">
+   <children>
+      <Label layoutX="55.0" layoutY="53.0" text="Customer ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="91.0" text="Customer Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="132.0" text="Customer Address">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="174.0" text="Customer Contact">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="206.0" layoutY="50.0" />
+      <JFXTextField layoutX="206.0" layoutY="85.0" />
+      <JFXTextField layoutX="206.0" layoutY="121.0" prefHeight="25.0" prefWidth="183.0" />
+      <JFXTextField layoutX="206.0" layoutY="159.0" />
+      <JFXComboBox layoutX="371.0" layoutY="50.0" prefHeight="25.0" prefWidth="112.0" />
+      <Label layoutX="561.0" layoutY="61.0" text="Order ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="674.0" layoutY="54.0" />
+      <JFXComboBox layoutX="839.0" layoutY="54.0" prefHeight="25.0" prefWidth="112.0" />
+      <Label layoutX="561.0" layoutY="102.0" text="Description">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="674.0" layoutY="95.0" prefHeight="25.0" prefWidth="277.0" />
+      <Label layoutX="561.0" layoutY="143.0" text="Order Date">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="674.0" layoutY="136.0" />
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="41.0" layoutY="221.0" prefHeight="78.0" prefWidth="137.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #28b50f;" text="Add Customer" textFill="#28b50f">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="218.0" layoutY="223.0" prefHeight="78.0" prefWidth="137.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #e78516;" text="View" textFill="#e78516">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="388.0" layoutY="223.0" prefHeight="78.0" prefWidth="137.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #f81616;" text="Remove Customer" textFill="#f81616">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="564.0" layoutY="222.0" prefHeight="78.0" prefWidth="137.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #1ebbbb;" text="Update Customer" textFill="#1ebbbb">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="721.0" layoutY="223.0" prefHeight="78.0" prefWidth="123.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #3fc520;" text="Report" textFill="#3fc520">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="263.0" layoutY="226.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-customer-insights-manager-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="60.0" layoutX="601.0" layoutY="224.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-change-user-48.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="14.0" layoutY="329.0" prefHeight="228.0" prefWidth="508.0">
+        <columns>
+          <TableColumn prefWidth="98.0" text="Cust ID" />
+          <TableColumn prefWidth="120.0" text="Cust Name" />
+            <TableColumn prefWidth="113.0" text="Cust Address" />
+            <TableColumn prefWidth="176.0" text="Cust Contact" />
+        </columns>
+      </TableView>
+      <TableView layoutX="521.0" layoutY="329.0" prefHeight="228.0" prefWidth="464.0">
+        <columns>
+          <TableColumn prefWidth="130.0" text="Order ID" />
+          <TableColumn prefWidth="202.0" text="Description" />
+            <TableColumn prefWidth="114.0" text="Order Date" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="83.0" layoutY="229.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-add-user-male-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="434.0" layoutY="233.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-denied-48.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="858.0" layoutY="223.0" prefHeight="78.0" prefWidth="115.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #38b3c5;" text="Full Report" textFill="#38b3c5">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="737.0" layoutY="243.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-apply-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="899.0" layoutY="233.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-attendance-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

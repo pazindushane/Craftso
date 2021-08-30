@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="569.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplyFormController">
+   <children>
+      <Label layoutX="58.0" layoutY="55.0" text="Supplier ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="184.0" layoutY="44.0" prefHeight="31.0" prefWidth="155.0" />
+      <Label layoutX="57.0" layoutY="105.0" text="Supplier Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="181.0" layoutY="94.0" prefHeight="31.0" prefWidth="200.0" />
+      <Label layoutX="544.0" layoutY="63.0" text="Material ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="670.0" layoutY="50.0" prefHeight="31.0" prefWidth="155.0" />
+      <Label layoutX="543.0" layoutY="112.0" text="Material Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="670.0" layoutY="98.0" prefHeight="31.0" prefWidth="155.0" />
+      <Label layoutX="543.0" layoutY="164.0" text="Description">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="670.0" layoutY="150.0" prefHeight="31.0" prefWidth="220.0" />
+      <Label layoutX="544.0" layoutY="216.0" text="Qty On Hand">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="670.0" layoutY="203.0" prefHeight="31.0" prefWidth="155.0" />
+      <Label layoutX="543.0" layoutY="272.0" text="Unit Price">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="671.0" layoutY="256.0" prefHeight="31.0" prefWidth="155.0" />
+      <Label layoutX="55.0" layoutY="157.0" text="Supplier Contact">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="181.0" layoutY="146.0" prefHeight="31.0" prefWidth="155.0" />
+      <JFXComboBox layoutX="854.0" layoutY="51.0" prefHeight="31.0" prefWidth="113.0" />
+      <JFXComboBox layoutX="381.0" layoutY="45.0" prefHeight="31.0" prefWidth="113.0" />
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="41.0" layoutY="221.0" prefHeight="69.0" prefWidth="137.0" style="-fx-background-radius: 20; -fx-border-color: #159a15; -fx-border-radius: 20; -fx-border-width: 3;" text="Add Supply" textFill="#159a15">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="46.0" layoutY="233.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-add-48.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="201.0" layoutY="221.0" prefHeight="69.0" prefWidth="120.0" style="-fx-background-radius: 20; -fx-border-color: #d3c205; -fx-border-radius: 20; -fx-border-width: 3;" text="Update" textFill="#d3c205">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="207.0" layoutY="236.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-update-48%20(1).png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="347.0" layoutY="225.0" prefHeight="69.0" prefWidth="120.0" style="-fx-background-radius: 20; -fx-border-color: #ee0c0c; -fx-border-radius: 20; -fx-border-width: 3;" text="Remove" textFill="#ee0c0c">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="353.0" layoutY="237.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-delete-bin-48.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="9.0" layoutY="384.0" prefHeight="182.0" prefWidth="1001.0">
+         <columns>
+            <TableColumn prefWidth="91.0" text="Supplier ID" />
+            <TableColumn prefWidth="107.0" text="Supplier Name" />
+            <TableColumn prefWidth="124.0" text="Supplier Contact" />
+            <TableColumn prefWidth="89.0" text="Material ID" />
+            <TableColumn prefWidth="137.0" text="Material Name" />
+            <TableColumn prefWidth="199.0" text="Description" />
+            <TableColumn prefWidth="103.0" text="QTY On Hand" />
+            <TableColumn prefWidth="119.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="846.0" layoutY="225.0" prefHeight="69.0" prefWidth="155.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #14a7a7; -fx-border-width: 3;" text="Return Supply" textFill="#14a7a7">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="522.0" layoutY="306.0" prefHeight="69.0" prefWidth="137.0" style="-fx-background-radius: 20; -fx-border-color: #34b50a; -fx-border-radius: 20; -fx-border-width: 3;" text="Report" textFill="#34b50a">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="695.0" layoutY="306.0" prefHeight="69.0" prefWidth="137.0" style="-fx-background-radius: 20; -fx-border-color: #1094a1; -fx-border-radius: 20; -fx-border-width: 3;" text="Report" textFill="#1094a1">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="532.0" layoutY="318.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-apply-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="705.0" layoutY="318.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-attendance-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="854.0" layoutY="237.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-undo-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

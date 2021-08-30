@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootH" prefHeight="580.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderFormController">
+   <children>
+      <JFXTextField fx:id="txtContact" focusColor="#9b5824" labelFloat="true" layoutX="58.0" layoutY="167.0" onAction="#txtContactOnAction" prefHeight="31.0" prefWidth="242.0" promptText="Customer Contact">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCustName" focusColor="#9b5824" labelFloat="true" layoutX="58.0" layoutY="229.0" prefHeight="31.0" prefWidth="242.0" promptText="Customer Name" unFocusColor="#0d0d0d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCustAddress" focusColor="#9b5824" labelFloat="true" layoutX="58.0" layoutY="284.0" prefHeight="31.0" prefWidth="242.0" promptText="Address" unFocusColor="#0d0d0d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCash" alignment="CENTER" labelFloat="true" layoutX="665.0" layoutY="162.0" prefHeight="43.0" prefWidth="135.0" promptText="Cash">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnPay" buttonType="RAISED" layoutX="679.0" layoutY="248.0" onAction="#btnPayOnAction" prefHeight="55.0" prefWidth="107.0" style="-fx-background-radius: 20; -fx-border-color: #3cda4e; -fx-border-radius: 20; -fx-border-width: 3; -fx-background-color: #3cda4e;" text="pay" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#3cda4e" />
+                  <Stop color="#fffdfd" offset="0.49140893470790376" />
+                  <Stop color="#3cda4e" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXTextField fx:id="txtExchange" alignment="CENTER" labelFloat="true" layoutX="665.0" layoutY="341.0" prefHeight="43.0" prefWidth="135.0" promptText="exchange">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnTKAWy" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="541.0" layoutY="473.0" onAction="#btnTKAWyOnAction" prefHeight="64.0" prefWidth="135.0" style="-fx-background-radius: 20; -fx-border-color: #9b5824; -fx-border-radius: 20; -fx-border-width: 3;" text="Take A Way" textFill="#9b5824">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#ff7a22" />
+                  <Stop color="WHITE" offset="0.49140893470790376" />
+                  <Stop color="#ff7a22" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnDelivery" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="694.0" layoutY="474.0" onMouseClicked="#btnDeliveryOnAction" prefHeight="64.0" prefWidth="124.0" style="-fx-background-radius: 20; -fx-border-color: #1c81bb; -fx-border-radius: 20; -fx-border-width: 3;" text="Delivery" textFill="#070707">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#1c81bb" />
+                  <Stop color="#fffdfd" offset="0.49140893470790376" />
+                  <Stop color="#1c81bb" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnEditORD" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="336.0" layoutY="124.0" onAction="#btnEditORDOnAction" onMouseClicked="#btnEditOnAction" prefHeight="55.0" prefWidth="135.0" style="-fx-background-radius: 20; -fx-border-color: #9b5824; -fx-border-radius: 20; -fx-border-width: 3;" text="Edit Order" textFill="#9b5824">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2b75d0" />
+                  <Stop color="WHITE" offset="0.49140893470790376" />
+                  <Stop color="#2b75d0" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="431.0" layoutY="133.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-buying-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="635.0" layoutY="487.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-shopaholic-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="770.0" layoutY="487.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-in-transit-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="95.0" layoutY="347.0" text="Payment Type" textFill="#9b5824">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="50.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-cash-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="229.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/mastercard-credit-card-american-express-visa-debit-card-mastercard.jpg" />
+         </image>
+      </ImageView>
+      <JFXRadioButton fx:id="rbCash" layoutX="41.0" layoutY="470.0" text="Cash" textFill="#9b5824">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="payment" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton fx:id="rbCard" layoutX="247.0" layoutY="473.0" text="Card" textFill="#9b5824" toggleGroup="$payment">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></JFXRadioButton>
+      <Label fx:id="lblTotal1" alignment="CENTER" layoutX="422.0" layoutY="285.0" prefHeight="43.0" prefWidth="118.0" text="00" textFill="#f20707">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="404.0" layoutY="230.0" text=" Total Amount" textFill="#9b5824">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="877.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDAte1" alignment="CENTER" layoutX="642.0" layoutY="35.0" prefHeight="40.0" prefWidth="191.0" text="00" textFill="#09b6ea">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOID11" alignment="CENTER" layoutX="466.0" layoutY="12.0" prefHeight="43.0" prefWidth="91.0" text="00" textFill="#09b6ea">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="437.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-shopping-cart-48.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblOID" layoutX="59.0" layoutY="43.0" text="Order ID :" textFill="#f4f4f4">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOID1" alignment="CENTER" layoutX="177.0" layoutY="33.0" prefHeight="43.0" prefWidth="91.0" text="00" textFill="#09b6ea">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOID2" layoutX="57.0" layoutY="114.0" text="Payment ID:" textFill="#0d0d0d">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPayID" alignment="CENTER" layoutX="178.0" layoutY="102.0" prefHeight="43.0" prefWidth="91.0" text="00" textFill="#09b6ea">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField alignment="CENTER" focusColor="#9b5824" labelFloat="true" layoutX="109.0" layoutY="509.0" prefHeight="40.0" prefWidth="135.0" promptText="Type">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

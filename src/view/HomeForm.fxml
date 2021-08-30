@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootH" prefHeight="580.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <Label layoutX="95.0" layoutY="306.0" text="Already a Customer ?">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnMakeOrd" buttonType="RAISED" layoutX="335.0" layoutY="302.0" onMouseClicked="#btnMakeOrdOnAction" ripplerFill="#1161ed" text="Make Order" textFill="#1161ed">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="509.0" layoutY="311.0" text="Or">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnCustReg" buttonType="RAISED" layoutX="562.0" layoutY="306.0" onMouseClicked="#btnCustRegOnAction" ripplerFill="#1161ed" text="Register Customer" textFill="#1161ed">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="94.0" fitWidth="877.0" layoutY="-2.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="160.0" layoutY="11.0" text="Welcome To Craftso Furnitures" textFill="#f5f2f2">
+         <font>
+            <Font name="Comic Sans MS Bold" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="172.0" fitWidth="306.0" layoutX="28.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/furniture-2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="183.0" fitWidth="234.0" layoutX="562.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/FKQl.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

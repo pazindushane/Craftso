@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="roota" prefHeight="580.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="877.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/old-wooden-texture-background-vintage_55716-1138%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="387.0" layoutY="34.0" text="Reports" textFill="#fffbfb">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btncustreport" alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="102.0" layoutY="196.0" onAction="#btncustreportONAction" prefHeight="100.0" prefWidth="166.0" style="-fx-border-color: #25a4c4; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;" text="Customer Reports" textFill="#171717">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#2ee577" offset="0.49484536082474223" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnorderreport" alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="370.0" layoutY="196.0" onAction="#btnorderreportOnaction" prefHeight="100.0" prefWidth="166.0" style="-fx-border-color: #ce6a2f; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;" text="Order Details" textFill="#0d0d0d">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#2ee577" offset="0.49484536082474223" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnpaymentreport" alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="614.0" layoutY="196.0" onAction="#btnpaymentreportOnaction" prefHeight="100.0" prefWidth="166.0" style="-fx-border-color: #2b9abf; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;" text="Payment Details" textFill="#101111">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#2ee577" offset="0.49484536082474223" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnDeliveryReport" alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="228.0" layoutY="385.0" onAction="#btnDeliveryReportOnaction" prefHeight="100.0" prefWidth="166.0" style="-fx-border-color: #c1b12e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;" text="Deliver Details" textFill="#111111">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#2ee577" offset="0.49484536082474223" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnProductReport" alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="498.0" layoutY="385.0" onAction="#btnProductReportOnAction" prefHeight="100.0" prefWidth="166.0" style="-fx-border-color: #8334d1; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;" text="Product Details">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#2ee577" offset="0.49484536082474223" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="157.0" layoutY="207.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/report-customer-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="425.0" layoutY="207.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-survey-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="671.0" layoutY="207.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-online-payment-48%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="283.0" layoutY="398.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-in-transit-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="383.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="551.0" layoutY="398.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-furniture-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

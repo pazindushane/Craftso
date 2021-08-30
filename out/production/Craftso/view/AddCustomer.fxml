@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootH" prefHeight="580.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerController">
+   <children>
+      <Label layoutX="89.0" layoutY="59.0" text="Customer Contact">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtContact" layoutX="223.0" layoutY="52.0" onAction="#txtContactOnAction" prefHeight="31.0" prefWidth="162.0" unFocusColor="#111111">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></JFXTextField>
+      <Label layoutX="89.0" layoutY="156.0" text="Customer Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="203.0" text="Customer Address">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustName" layoutX="223.0" layoutY="145.0" prefHeight="31.0" prefWidth="162.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCustAddress" layoutX="223.0" layoutY="192.0" prefHeight="31.0" prefWidth="265.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnAdCust" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="74.0" layoutY="302.0" onAction="#btnAdCustOnAction" prefHeight="55.0" prefWidth="143.0" style="-fx-background-radius: 20; -fx-border-color: linear-gradient(to right top, #5fe916, #00e196, #00d0ea, #00b6ff, #0092ff, #0092ff, #0092ff, #0092ff, #00b6ff, #00d0ea, #00e196, #5fe916);; -fx-border-radius: 20; -fx-border-width: 3;" text="Add Customer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#3cd63c" />
+                  <Stop color="#fdfffd" offset="0.49140893470790376" />
+                  <Stop color="#3cd63c" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnRemove" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="235.0" layoutY="304.0" onAction="#btnRemoveOnAction" prefHeight="55.0" prefWidth="112.0" style="-fx-background-radius: 20; -fx-border-color: linear-gradient(to right top, #4f9be0, #758fe0, #9981d6, #b971c3, #d060a8, #d060a8, #d060a8, #d060a8, #b971c3, #9981d6, #758fe0, #4f9be0);; -fx-border-radius: 20; -fx-border-width: 3;" text="Remove">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#d33dc2" />
+                  <Stop color="#fdfffd" offset="0.49140893470790376" />
+                  <Stop color="#d33dc2" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnUpdate" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="376.0" layoutY="304.0" onAction="#btnUpdateOnAction" prefHeight="55.0" prefWidth="115.0" style="-fx-background-radius: 20; -fx-border-color: linear-gradient(to right top, #5fe916, #00e196, #00d0ea, #00b6ff, #0092ff, #0092ff, #0092ff, #0092ff, #00b6ff, #00d0ea, #00e196, #5fe916); -fx-border-radius: 20; -fx-border-width: 3;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#3cd63c" />
+                  <Stop color="#fdfffd" offset="0.49140893470790376" />
+                  <Stop color="#3cd63c" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <JFXButton fx:id="btnView" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="526.0" layoutY="307.0" onAction="#btnViewOnAction" prefHeight="55.0" prefWidth="127.0" style="-fx-background-radius: 20; -fx-border-color: linear-gradient(to right top, #5fe916, #00e196, #00d0ea, #00b6ff, #0092ff, #0092ff, #0092ff, #0092ff, #00b6ff, #00d0ea, #00e196, #5fe916); -fx-border-radius: 20; -fx-border-width: 3;" text="View all">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#3cd63c" />
+                  <Stop color="#fdfffd" offset="0.49140893470790376" />
+                  <Stop color="#3cd63c" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <Label layoutX="89.0" layoutY="106.0" text="Customer ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustID" layoutX="223.0" layoutY="98.0" prefHeight="31.0" prefWidth="162.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></JFXTextField>
+      <Label layoutX="90.0" layoutY="249.0" text="Customer Email">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtMail" layoutX="223.0" layoutY="239.0" prefHeight="31.0" prefWidth="265.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font></JFXTextField>
+      <TableView fx:id="tblCustomer" layoutY="378.0" prefHeight="201.0" prefWidth="876.0">
+        <columns>
+          <TableColumn fx:id="clmContact" prefWidth="198.0" text="Customer Contact" />
+          <TableColumn fx:id="clmID" prefWidth="128.0" text="Customer ID" />
+            <TableColumn fx:id="clmName" prefWidth="180.0" text="Customer Name" />
+            <TableColumn fx:id="clmAddress" prefWidth="187.0" text="Address" />
+            <TableColumn fx:id="clmMail" prefWidth="181.0" text="Email" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnMakeOrd" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="692.0" layoutY="291.0" onMouseClicked="#btnMakeOrdOnAction" prefHeight="55.0" prefWidth="135.0" style="-fx-background-radius: 20; -fx-border-color: linear-gradient(to right top, #5fe916, #00e196, #00d0ea, #00b6ff, #0092ff, #0092ff, #0092ff, #0092ff, #00b6ff, #00d0ea, #00e196, #5fe916);; -fx-border-radius: 20; -fx-border-width: 3;" text="Make Order">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#3cd63c" />
+                  <Stop color="#fdfffd" offset="0.49140893470790376" />
+                  <Stop color="#3cd63c" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Label fx:id="lblDAte" alignment="CENTER" layoutX="709.0" layoutY="45.0" prefHeight="40.0" prefWidth="80.0" text="Date">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="26.0" layoutX="83.0" layoutY="316.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-add-user-male-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="26.0" layoutX="250.0" layoutY="320.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-remove-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="391.0" layoutY="317.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-change-user-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="545.0" layoutY="319.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-customer-insights-manager-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="26.0" layoutX="787.0" layoutY="306.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Cart.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDAte1" alignment="CENTER" layoutX="643.0" layoutY="81.0" prefHeight="40.0" prefWidth="213.0" text="00" textFill="#1d0be8">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

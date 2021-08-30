@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeFormController">
+   <children>
+      <Label layoutX="62.0" layoutY="60.0" text="Employee ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="198.0" layoutY="40.0" prefHeight="34.0" prefWidth="146.0" />
+      <Label layoutX="62.0" layoutY="104.0" text="Employee Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="198.0" layoutY="84.0" prefHeight="34.0" prefWidth="146.0" />
+      <Label layoutX="62.0" layoutY="206.0" text="Employee Address">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="198.0" layoutY="186.0" prefHeight="34.0" prefWidth="234.0" />
+      <Label layoutX="62.0" layoutY="251.0" text="Employee Contact">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="198.0" layoutY="231.0" prefHeight="34.0" prefWidth="146.0" />
+      <Label layoutX="470.0" layoutY="64.0" text="Employee Salary">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="606.0" layoutY="44.0" prefHeight="34.0" prefWidth="146.0" />
+      <Label layoutX="469.0" layoutY="110.0" text="Epf">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="605.0" layoutY="90.0" prefHeight="34.0" prefWidth="146.0" />
+      <Label layoutX="469.0" layoutY="154.0" text="Etf">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="605.0" layoutY="134.0" prefHeight="34.0" prefWidth="146.0" />
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="814.0" layoutY="26.0" prefHeight="62.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #24bb38;" text="Add Employee" textFill="#24bb38">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="803.0" layoutY="108.0" prefHeight="62.0" prefWidth="168.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #da1a1a;" text="Remove Employee" textFill="#da1a1a">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="802.0" layoutY="186.0" prefHeight="62.0" prefWidth="168.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #1184b1;" text="Update Employee" textFill="#1184b1">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="477.0" layoutY="240.0" prefHeight="69.0" prefWidth="131.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #1a9d15;" text="Employee Report" textFill="#1a9d15">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="636.0" layoutY="242.0" prefHeight="69.0" prefWidth="131.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #17b2b1;" text="Full Report" textFill="#17b2b1">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="837.0" layoutY="255.0" prefHeight="62.0" prefWidth="131.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #18b198;" text="View All" textFill="#18b198">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView layoutX="12.0" layoutY="326.0" prefHeight="223.0" prefWidth="981.0">
+        <columns>
+          <TableColumn prefWidth="96.0" text="Employee ID" />
+          <TableColumn prefWidth="142.0" text="Employee Name" />
+            <TableColumn prefWidth="123.0" text="Position" />
+            <TableColumn prefWidth="148.0" text="Address" />
+            <TableColumn prefWidth="118.0" text="Contact" />
+            <TableColumn prefWidth="126.0" text="Salary" />
+            <TableColumn prefWidth="105.0" text="Epf" />
+            <TableColumn prefWidth="77.0" text="Etf" />
+        </columns>
+      </TableView>
+      <Label layoutX="62.0" layoutY="158.0" text="Employee Position">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="198.0" layoutY="138.0" prefHeight="34.0" prefWidth="146.0" />
+      <Label layoutX="470.0" layoutY="202.0" text="Employee Salary">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="606.0" layoutY="182.0" prefHeight="34.0" prefWidth="146.0" />
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="819.0" layoutY="36.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-add-user-male-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="804.0" layoutY="193.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-change-user-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="806.0" layoutY="118.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-denied-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="854.0" layoutY="270.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-view-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="682.0" layoutY="248.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-attendance-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="521.0" layoutY="243.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-apply-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

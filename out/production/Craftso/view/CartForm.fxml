@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootH" prefHeight="580.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CartFormController">
+   <children>
+      <JFXComboBox fx:id="cmbPcategory" layoutX="206.0" layoutY="98.0" onAction="#cmbPcategoryOnAction" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutX="46.0" layoutY="102.0" text="Product Category">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbPname" layoutX="206.0" layoutY="151.0" onAction="#cmbPnameOnAction" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutX="46.0" layoutY="155.0" text="Product ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="203.0" text="Qty On Hand">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="lblQTY1" layoutX="204.0" layoutY="200.0" prefHeight="25.0" prefWidth="159.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="46.0" layoutY="255.0" text="Material">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPdsecrip" layoutX="204.0" layoutY="252.0" prefHeight="25.0" prefWidth="248.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="474.0" layoutY="177.0" text="Unit Price">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPunitp" layoutX="571.0" layoutY="165.0" prefHeight="25.0" prefWidth="133.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnAdCrt" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="31.0" layoutY="304.0" onAction="#btnAdCrtOnAction" prefHeight="54.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-border-color: #10ab15; -fx-border-radius: 20; -fx-border-width: 3;" text="Add To Cart" textFill="#101110">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#10ab15" />
+                  <Stop color="#10ab15" offset="0.007662835249042145" />
+                  <Stop color="#fefffe" offset="0.5051546391752577" />
+                  <Stop color="#10ab15" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnRemove" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="222.0" layoutY="303.0" onAction="#btnRemoveOnAction" prefHeight="54.0" prefWidth="118.0" style="-fx-background-radius: 20; -fx-border-color: #c9325a; -fx-border-radius: 20; -fx-border-width: 3;" text="Remove">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#c9325a" />
+                  <Stop color="#f2f2f2" offset="0.49140893470790376" />
+                  <Stop color="#c9325a" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnMorder" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="690.0" layoutY="294.0" onMouseClicked="#btnMorderOnAction" prefHeight="63.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-border-color: #20b552; -fx-border-radius: 20; -fx-border-width: 3;" text="Make Order">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#20b552" />
+                  <Stop color="#f2f2f2" offset="0.49140893470790376" />
+                  <Stop color="#20b552" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <TableView fx:id="tblCart" layoutY="376.0" prefHeight="201.0" prefWidth="876.0">
+        <columns>
+          <TableColumn fx:id="clmCategory" prefWidth="105.0" text="Category" />
+          <TableColumn fx:id="clmName" prefWidth="128.0" text="Name" />
+            <TableColumn fx:id="clmPID" prefWidth="99.0" text="ID" />
+            <TableColumn fx:id="clmDesc" prefWidth="138.0" text="Material" />
+            <TableColumn fx:id="clmUprice" prefWidth="140.0" text="Unit Price" />
+            <TableColumn fx:id="clmQTY" prefWidth="115.0" text="QTY" />
+            <TableColumn fx:id="clmQtyOnhand" prefWidth="134.0" text="QTY Hand" />
+            <TableColumn fx:id="clmOrderID" minWidth="0.0" prefWidth="7.0" text="OID" />
+            <TableColumn fx:id="clmCustCont" minWidth="6.0" prefWidth="6.0" text="QTY Hand" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="562.0" layoutY="270.0" prefHeight="43.0" prefWidth="118.0" text="Total">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="218.0" text="QTY">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtQTYH" layoutX="570.0" layoutY="213.0" prefHeight="25.0" prefWidth="133.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label fx:id="lblTotal1" alignment="CENTER" layoutX="562.0" layoutY="310.0" prefHeight="43.0" prefWidth="118.0" text="00" textFill="#ee0909">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="428.0" layoutY="31.0" prefHeight="43.0" prefWidth="118.0" text="Product Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="577.0" layoutY="104.0" prefHeight="43.0" prefWidth="118.0" text="Items In Cart">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPID" alignment="CENTER" layoutX="427.0" layoutY="74.0" prefHeight="43.0" prefWidth="118.0" text="00" textFill="#5211f5">
+         <font>
+            <Font name="Comic Sans MS Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCart1" alignment="CENTER" layoutX="611.0" layoutY="33.0" prefHeight="43.0" prefWidth="118.0" text="00" textFill="#4004cd">
+         <font>
+            <Font name="Comic Sans MS Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="783.0" layoutY="310.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Cart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="237.0" layoutY="315.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-remove-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="46.0" layoutY="315.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-shopping-basket-48.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="730.0" layoutY="31.0" prefHeight="43.0" prefWidth="118.0" text="Order ID">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOID1" alignment="CENTER" layoutX="729.0" layoutY="75.0" prefHeight="43.0" prefWidth="118.0" text="00" textFill="#4004cd">
+         <font>
+            <Font name="Comic Sans MS Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="54.0" fitWidth="48.0" layoutX="611.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-shopping-cart-48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="49.0" text="Customer Contact">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtContact" layoutX="208.0" layoutY="43.0" prefHeight="31.0" prefWidth="159.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></JFXTextField>
+   </children>
+</AnchorPane>
